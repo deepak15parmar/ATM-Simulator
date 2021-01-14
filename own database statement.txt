@@ -1,0 +1,17 @@
+signup alternate:
+create table signupalt(name varchar(15) not null ,fname varchar(15),birthday date,gender varchar(7),email varchar(20), marital varchar(10), address varchar(30),city varchar(20),pincode varchar(10), state varchar(15),formno varchar(10) primary key);
+
+Signup2 table: 
+
+
+create table signup2(formno varchar(10),religion varchar(15), category varchar(15),income varchar(25),education varchar(15),occupation varchar(15),pan varchar(15),aadhar varchar(20), senior varchar(5), existing varchar(5), foreign key(formno) references signupalt(formno));
+
+Signup3 table:
+
+create table signup3(formno varchar(10), account varchar(30), cardno varchar(25),pin varchar(5) not null, service_required varchar(100),mobile varchar(10) primary key, foreign key(formno) references signupalt(formno));
+
+
+bank table:
+
+create table bank(accno varchar(16) , mobile varchar(10),pin varchar(10), deposit varchar(15), withdraw varchar(15), balance varchar(15),foreign key(mobile) references signup3(mobile),id int primary key AUTO_INCREMENT); 
+
