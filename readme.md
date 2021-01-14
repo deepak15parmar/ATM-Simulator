@@ -10,7 +10,7 @@ An ATM Simulation system using Java Swings and MySQL.
 - Registration if account does not exist
 - Checking of Balance before transaction
 - 5 transactions can be performed -> Reset PIN, Withdraw, Deposit, Check Balance, Fast Cast
-NOTE: 
+- NOTE: 
 1. alter table bank modify id INTEGER PRIMARY KEY AUTO_INCREMENT;
 2. conn.java contains JDBC connection part.
 3. first create conn.java followed by login.java, signup.java,signup2.java and so on.
